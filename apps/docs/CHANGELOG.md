@@ -1,5 +1,11 @@
 # docs
 
+## 1.2.0-beta.0
+
+### Minor Changes
+
+- [#6](https://github.com/vedi/monorepo-versioning-gitops/pull/6) [`154c124133ede61997006450eead7bb6a62de720`](https://github.com/vedi/monorepo-versioning-gitops/commit/154c124133ede61997006450eead7bb6a62de720) Thanks [@vedi](https://github.com/vedi)! - Updates in FEs
+
 ## 1.1.0
 
 ### Minor Changes
