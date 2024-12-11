@@ -13,6 +13,6 @@ spec:
       valueFiles:
         - values.yaml
     path: k8s/apps
-    repoURL: https://github.com/saenyakorn/monorepo-versioning-gitops.git
+    repoURL: https://github.com/vedi/monorepo-versioning-gitops.git
     targetRevision: main
   syncPolicy: {}
