@@ -56,7 +56,6 @@ jobs:
         id: affected-apps
         run: |
           PACKAGES=$(pnpm turbo run build --filter='...[origin/beta]' --dry=json | jq -c '.packages | map(select(. != "//"))')
-          PACKAGES=$(pnpm turbo run build --filter='...[origin/beta]' --dry=json')
           echo "packages=$PACKAGES" >> $GITHUB_OUTPUT
           echo "packages=$PACKAGES"
 
