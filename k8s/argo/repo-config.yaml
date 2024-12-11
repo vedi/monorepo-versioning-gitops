@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/part-of: argocd
     argocd.argoproj.io/secret-type: repository
 stringData:
-  name:
-  project: monorepo-demo
-  type: git
-  url: https://github.com/saenyakorn/monorepo-versioning-gitops.git
+  name: "some-secret-name"
+  project: "monorepo-demo"
+  type: "git"
+  url: "https://github.com/vedi/monorepo-versioning-gitops.git"

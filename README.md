@@ -296,7 +296,7 @@ There are things you need to do if you already have your monorepo workspace set 
 1. Install Changesets CLI in the root of the workspace:
 
    ```bash
-   pnpm add -D -W @changesets/cli
+   pnpm add -D -w @changesets/cli
    ```
 
 2. Initialize Changesets:
