@@ -6,7 +6,7 @@ export default function Docs() {
   return (
     <div>
       <h1>Docs</h1>
-      <p>Version {pk.version}</p>
+      <p>Current Docs Version {pk.version}</p>
       <Button />
       <Input />
     </div>
