@@ -61,7 +61,7 @@ jobs:
           JSON_CONTENT="${JSON_CONTENT//$'\n'/'%0A'}"
           JSON_CONTENT="${JSON_CONTENT//$'\r'/'%0D'}"
           
-          PACKAGES=${fromJSON(JSON_CONTENT).packages}
+          PACKAGES=${{ fromJSON(JSON_CONTENT).packages }}
           echo "packages=$PACKAGES" >> $GITHUB_OUTPUT
           echo "packages=$PACKAGES"
 
