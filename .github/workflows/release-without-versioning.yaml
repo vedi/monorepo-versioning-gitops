@@ -66,7 +66,7 @@ jobs:
       - name: Get affected app names
         id: affected-apps
         run: |
-          echo ${{steps.affected-filter.outputs.jsonContent}
+          echo ${{steps.affected-filter.outputs.jsonContent}}
           PACKAGES=${{ fromJSON(steps.affected-filter.outputs.jsonContent).packages }}
           echo "packages=$PACKAGES" >> $GITHUB_OUTPUT
           echo "packages=$PACKAGES"
