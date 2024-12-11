@@ -159,5 +159,4 @@ jobs:
       gitops-ref: main
       update-mode: commit
     secrets:
-      GH_TOKEN: ${{ secrets.GH_TOKEN }}
-̊
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}̊
