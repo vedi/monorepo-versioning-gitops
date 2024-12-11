@@ -60,12 +60,13 @@ jobs:
           JSON_CONTENT="${JSON_CONTENT//'%'/'%25'}"
           JSON_CONTENT="${JSON_CONTENT//$'\n'/'%0A'}"
           JSON_CONTENT="${JSON_CONTENT//$'\r'/'%0D'}"
-          
+          echo $JSON_CONTENT
           echo "::set-output name=jsonContent::$JSON_CONTENT"
 
       - name: Get affected app names
         id: affected-apps
         run: |
+          echo ${{steps.affected-filter.outputs.jsonContent}
           PACKAGES=${{ fromJSON(steps.affected-filter.outputs.jsonContent).packages }}
           echo "packages=$PACKAGES" >> $GITHUB_OUTPUT
           echo "packages=$PACKAGES"
