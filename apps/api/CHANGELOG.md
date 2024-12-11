@@ -1,5 +1,11 @@
 # api
 
+## 1.2.1-beta.0
+
+### Patch Changes
+
+- [#5](https://github.com/vedi/monorepo-versioning-gitops/pull/5) [`5e859a46b6b2c3dd8c111ea4f6de310eadac746d`](https://github.com/vedi/monorepo-versioning-gitops/commit/5e859a46b6b2c3dd8c111ea4f6de310eadac746d) Thanks [@vedi](https://github.com/vedi)! - Remove unused endpoint
+
 ## 1.2.0
 
 ### Minor Changes
