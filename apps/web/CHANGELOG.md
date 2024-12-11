@@ -1,5 +1,11 @@
 # web
 
+## 1.1.2-beta.1
+
+### Patch Changes
+
+- [#1](https://github.com/vedi/monorepo-versioning-gitops/pull/1) [`928e4cb5a1d7b1a1204f3a0a24c842214b0d0863`](https://github.com/vedi/monorepo-versioning-gitops/commit/928e4cb5a1d7b1a1204f3a0a24c842214b0d0863) Thanks [@vedi](https://github.com/vedi)! - Renoved
+
 ## 1.1.2-beta.0
 
 ### Patch Changes
