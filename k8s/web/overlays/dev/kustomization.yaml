@@ -11,7 +11,7 @@ nameSuffix: -dev
 
 images:
 - name: web
-  newName: ghcr.io/saenyakorn/monorepo-demo/web
+  newName: ghcr.io/vedi/monorepo-demo/web
   newTag: dev-1b62960712df46465ef6192a6a7f1d197898592a
 
 resources:

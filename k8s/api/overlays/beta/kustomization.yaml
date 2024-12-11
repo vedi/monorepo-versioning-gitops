@@ -11,7 +11,7 @@ nameSuffix: -beta
 
 images:
 - name: api
-  newName: ghcr.io/saenyakorn/monorepo-demo/api
+  newName: ghcr.io/vedi/monorepo-demo/api
   newTag: 1.2.0-beta.0
 
 resources:

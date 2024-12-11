@@ -65,14 +65,13 @@ jobs:
         uses: pnpm/action-setup@v4
         id: pnpm-install
         with:
-          version: 9
           run_install: false
 
       - name: Get pnpm store directory
         id: pnpm-cache
+        #  The `set-output` command is deprecated
         run: |
           echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
-
       - name: Setup pnpm cache
         uses: actions/cache@v3
         with:
@@ -159,4 +158,4 @@ jobs:
       gitops-ref: main
       update-mode: commit
     secrets:
-      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}̊

@@ -2,5 +2,5 @@ spec:
   destination:
     server: https://kubernetes.default.svc
   source:
-    repoURL: https://github.com/saenyakorn/monorepo-versioning-gitops.git
+    repoURL: https://github.com/vedi/monorepo-versioning-gitops.git
     targetRevision: main
