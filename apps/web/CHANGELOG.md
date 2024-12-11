@@ -1,5 +1,13 @@
 # web
 
+## 1.1.2
+
+### Patch Changes
+
+- [#1](https://github.com/vedi/monorepo-versioning-gitops/pull/1) [`928e4cb5a1d7b1a1204f3a0a24c842214b0d0863`](https://github.com/vedi/monorepo-versioning-gitops/commit/928e4cb5a1d7b1a1204f3a0a24c842214b0d0863) Thanks [@vedi](https://github.com/vedi)! - Renoved
+
+- [#112](https://github.com/saenyakorn/monorepo-versioning-gitops/pull/112) [`2faaf98f5ab64f9711138c1a10d9cf3bba285b6b`](https://github.com/vedi/monorepo-versioning-gitops/commit/2faaf98f5ab64f9711138c1a10d9cf3bba285b6b) Thanks [@saenyakorn](https://github.com/saenyakorn)! - fix remove content in web
+
 ## 1.1.2-beta.1
 
 ### Patch Changes
