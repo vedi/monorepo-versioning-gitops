@@ -1,0 +1,83 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: redis-dev
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: monorepo-demo-infra
+  source:
+    repoURL: 'https://charts.bitnami.com/bitnami'
+    targetRevision: 20.5.0
+    helm:
+      parameters:
+        - name: auth.enabled
+          value: 'false'
+      releaseName: redis
+    chart: redis
+  destination:
+    namespace: monorepo-demo
+    server: {{ .Values.spec.destination.server }}
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: redis-beta
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: monorepo-demo-infra
+  source:
+    repoURL: 'https://charts.bitnami.com/bitnami'
+    targetRevision: 20.5.0
+    helm:
+      parameters:
+        - name: auth.enabled
+          value: 'false'
+      releaseName: redis
+    chart: redis
+  destination:
+    namespace: monorepo-demo
+    server: {{ .Values.spec.destination.server }}
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: redis-prod
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: monorepo-demo-infra
+  source:
+    repoURL: 'https://charts.bitnami.com/bitnami'
+    targetRevision: 20.5.0
+    helm:
+      parameters:
+        - name: auth.enabled
+          value: 'false'
+      releaseName: redis
+    chart: redis
+  destination:
+    namespace: monorepo-demo
+    server: {{ .Values.spec.destination.server }}
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
