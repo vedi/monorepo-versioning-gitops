@@ -10,7 +10,7 @@ spec:
   source:
     chart: kafka
     repoURL: 'registry-1.docker.io/bitnamicharts'
-    targetRevision: 20.5.0
+    targetRevision: 31.1.0
     helm:
       parameters:
         - name: auth.enabled
@@ -38,7 +38,7 @@ spec:
   source:
     chart: kafka
     repoURL: 'registry-1.docker.io/bitnamicharts'
-    targetRevision: 20.5.0
+    targetRevision: 31.1.0
     helm:
       parameters:
         - name: auth.enabled
@@ -66,7 +66,7 @@ spec:
   source:
     chart: kafka
     repoURL: 'registry-1.docker.io/bitnamicharts'
-    targetRevision: 20.5.0
+    targetRevision: 31.1.0
     helm:
       parameters:
         - name: auth.enabled
