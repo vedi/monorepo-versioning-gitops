@@ -10,6 +10,7 @@ spec:
   source:
     chart: redis
     repoURL: 'registry-1.docker.io/bitnamicharts'
+    targetRevision: 20.5.0
     helm:
       parameters:
         - name: auth.enabled
