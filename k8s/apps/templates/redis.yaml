@@ -8,14 +8,14 @@ metadata:
 spec:
   project: monorepo-demo-infra
   source:
-    repoURL: 'https://charts.bitnami.com/bitnami'
+    chart: redis
+    repoURL: 'oci://registry-1.docker.io/bitnamicharts'
     targetRevision: 20.5.0
     helm:
       parameters:
         - name: auth.enabled
           value: 'false'
       releaseName: redis
-    chart: redis
   destination:
     namespace: monorepo-demo
     server: {{ .Values.spec.destination.server }}
