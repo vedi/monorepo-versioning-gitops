@@ -49,7 +49,7 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: monorepo-demo-infra
   source:
-    path: k8s/infra/redis/overlays/wproddev
+    path: k8s/infra/redis/overlays/prod
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
   syncPolicy:
